@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28BF8FB9-358D-C669-8B44-93D320152BC2" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_EMPRESA">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>TAB_EMPRESA</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_EMPRESA" id="AB355F67-4246-D1BB-07BD-E71A274BB9CF">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_EMPRESA</sourceObjSchema>
+<sourceObjName>COD_EMPRESA</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_EMPRESA" id="0AFBFD1D-0559-6181-13F0-A18B86D41709">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_EMPRESA</sourceObjSchema>
+<sourceObjName>NOME_EMPRESA</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A057ED07-FB6F-0F88-EBA8-FBEA0B5AC516" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_EMPRESA_PK">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>SYS_C0011919</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB355F67-4246-D1BB-07BD-E71A274BB9CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

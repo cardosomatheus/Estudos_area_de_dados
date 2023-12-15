@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="880E1A14-EB69-E4C6-1C4A-985C61A24F7B" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_PROJETO">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>TAB_PROJETO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PROJETO" id="7A7DFECF-E614-45E0-9060-EB5B8289DD1A">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_PROJETO</sourceObjSchema>
+<sourceObjName>COD_PROJETO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PROJETO" id="89606D88-1887-E49A-8A61-2110459EB1F4">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_PROJETO</sourceObjSchema>
+<sourceObjName>NOME_PROJETO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORCAMENTO" id="72F39D70-5AE0-B591-FBDF-EC744400029A">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_PROJETO</sourceObjSchema>
+<sourceObjName>ORCAMENTO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_INICIO" id="9C989B45-A7E2-5748-87A4-62718AB9CE3E">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_PROJETO</sourceObjSchema>
+<sourceObjName>DATA_INICIO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_DEPARTAMENTO" id="C1ED911E-60AD-6B43-BF62-336EF1C20BC9">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_PROJETO</sourceObjSchema>
+<sourceObjName>COD_DEPARTAMENTO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1D494DE-E11D-EC44-6968-19B32D742889" referredColumn="F75EDBCC-F37A-24D9-84C0-5171D79F2316"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47526351-24D8-82EE-A3B3-9333B40CDE5D" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_PROJETO_PK">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>SYS_C0011925</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A7DFECF-E614-45E0-9060-EB5B8289DD1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06B09426-41C5-148C-867B-4AD9BD5AC073" name="FK_TAB_DEPARTAMENTO_TAB_PROJETO">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:47 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1ED911E-60AD-6B43-BF62-336EF1C20BC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

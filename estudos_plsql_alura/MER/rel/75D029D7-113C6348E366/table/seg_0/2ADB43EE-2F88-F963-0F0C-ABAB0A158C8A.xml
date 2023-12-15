@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ADB43EE-2F88-F963-0F0C-ABAB0A158C8A" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_DEPARTAMENTO">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>TAB_DEPARTAMENTO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_DEPARTAMENTO" id="F75EDBCC-F37A-24D9-84C0-5171D79F2316">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPARTAMENTO</sourceObjSchema>
+<sourceObjName>COD_DEPARTAMENTO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_DEPARTAMENTO" id="8728BB23-2E25-0E61-4BF9-BDBDE536D8BE">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPARTAMENTO</sourceObjSchema>
+<sourceObjName>NOME_DEPARTAMENTO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="550839C6-ADF1-0B55-70E5-F038D482874D">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPARTAMENTO</sourceObjSchema>
+<sourceObjName>CIDADE</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="6D35DBAF-25D4-0A6F-5B45-5632CA1D6DC8">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPARTAMENTO</sourceObjSchema>
+<sourceObjName>COD_EMPRESA</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7373B11E-4032-6429-921E-F66474130DF9" referredColumn="AB355F67-4246-D1BB-07BD-E71A274BB9CF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9917BC0-FBCB-CB9B-9666-4EFFE0B170E6" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_DEPARTAMENTO_PK">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>SYS_C0011922</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F75EDBCC-F37A-24D9-84C0-5171D79F2316"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69CC2D14-C52C-E8C3-6AA6-9DB1F85B1D42" name="FK_TAB_EMPRESA_TAB_DEPARTAMENTO">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D35DBAF-25D4-0A6F-5B45-5632CA1D6DC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

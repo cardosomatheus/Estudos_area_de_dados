@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TAB_DEPENDENTE" directorySegmentName="seg_0" id="798C892D-B422-AC76-0CD0-20F090328E1C">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2E6A548E-74EA-5DB7-30F3-C650BF52D81A</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIPO" id="48226BF5-A0F0-B47C-2896-B602A6A99931">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_FUNCIONARIO" id="4EA89283-91F4-C432-CC62-EB9C2D585E0D">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_DEPENDENTE" id="945BF9D1-C2AF-183B-64C0-76FEA9557417">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDADE" id="A9B5B05D-681E-D1C7-7A08-C9EC71608C31">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOME_DEPENDENTE" id="E1FF0452-0830-7826-3FC4-E6D0DAD95AA5">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TK_TAB_FUNCIONARIO_TAB_DEPENDENTE" id="7212714E-7777-B131-BB1C-419258977F61">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:12 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TAB_DEPENDENTE_PK" id="7D1216F4-D5D1-FFB7-F718-D632A042E7D1">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:12 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<segment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<indexSegment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

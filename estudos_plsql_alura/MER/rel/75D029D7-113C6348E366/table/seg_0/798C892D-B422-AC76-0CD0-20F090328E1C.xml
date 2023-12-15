@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="798C892D-B422-AC76-0CD0-20F090328E1C" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_DEPENDENTE">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>TAB_DEPENDENTE</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_DEPENDENTE" id="945BF9D1-C2AF-183B-64C0-76FEA9557417">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPENDENTE</sourceObjSchema>
+<sourceObjName>COD_DEPENDENTE</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_DEPENDENTE" id="E1FF0452-0830-7826-3FC4-E6D0DAD95AA5">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPENDENTE</sourceObjSchema>
+<sourceObjName>NOME_DEPENDENTE</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="48226BF5-A0F0-B47C-2896-B602A6A99931">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPENDENTE</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDADE" id="A9B5B05D-681E-D1C7-7A08-C9EC71608C31">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPENDENTE</sourceObjSchema>
+<sourceObjName>IDADE</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_FUNCIONARIO" id="4EA89283-91F4-C432-CC62-EB9C2D585E0D">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>TAB_DEPENDENTE</sourceObjSchema>
+<sourceObjName>COD_FUNCIONARIO</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:11 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FB37BB2-ADA6-5963-E2A1-D86008B84722" referredColumn="6D50D3E3-E890-6A4A-ACBB-D1C9BF3CE136"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D1216F4-D5D1-FFB7-F718-D632A042E7D1" schemaObject="A7645153-9093-0846-F30E-EED6251E8B33" name="TAB_DEPENDENTE_PK">
+<sourceConnName>DG00351_DEV</sourceConnName>
+<sourceObjSchema>DG00351</sourceObjSchema>
+<sourceObjName>SYS_C0011928</sourceObjName>
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:12 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="945BF9D1-C2AF-183B-64C0-76FEA9557417"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7212714E-7777-B131-BB1C-419258977F61" name="TK_TAB_FUNCIONARIO_TAB_DEPENDENTE">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:11:12 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EA89283-91F4-C432-CC62-EB9C2D585E0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TAB_DEPARTAMENTO" directorySegmentName="seg_0" id="2ADB43EE-2F88-F963-0F0C-ABAB0A158C8A">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2E6A548E-74EA-5DB7-30F3-C650BF52D81A</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CIDADE" id="550839C6-ADF1-0B55-70E5-F038D482874D">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_EMPRESA" id="6D35DBAF-25D4-0A6F-5B45-5632CA1D6DC8">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOME_DEPARTAMENTO" id="8728BB23-2E25-0E61-4BF9-BDBDE536D8BE">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_DEPARTAMENTO" id="F75EDBCC-F37A-24D9-84C0-5171D79F2316">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TAB_EMPRESA_TAB_DEPARTAMENTO" id="69CC2D14-C52C-E8C3-6AA6-9DB1F85B1D42">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TAB_DEPARTAMENTO_PK" id="C9917BC0-FBCB-CB9B-9666-4EFFE0B170E6">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:32 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<segment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<indexSegment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

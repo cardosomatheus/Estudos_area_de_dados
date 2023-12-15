@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TAB_EMPRESA" directorySegmentName="seg_0" id="28BF8FB9-358D-C669-8B44-93D320152BC2">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2E6A548E-74EA-5DB7-30F3-C650BF52D81A</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOME_EMPRESA" id="0AFBFD1D-0559-6181-13F0-A18B86D41709">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_EMPRESA" id="AB355F67-4246-D1BB-07BD-E71A274BB9CF">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:21 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TAB_EMPRESA_PK" id="A057ED07-FB6F-0F88-EBA8-FBEA0B5AC516">
+<createdBy>matheus.santos</createdBy>
+<createdTime>2023-01-12 12:10:22 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<schemaObject>A7645153-9093-0846-F30E-EED6251E8B33</schemaObject>
+<segment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</segment>
+<tableSpace>C7E4F9DB-2C62-A490-B4AF-87354D54C51A</tableSpace>
+<indexSegment>6D09EE1E-7DFF-3E22-FD34-38AB5F4CAAB0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
