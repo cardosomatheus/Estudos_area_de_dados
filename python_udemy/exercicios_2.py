@@ -1,18 +1,26 @@
-from exercicios_1 import *
+from funcoes import *
 
-# IMC
-altura_metros = 1.80
-peso = 78
-imc_body(peso=peso, altura_metros=altura_metros)
-
+"""
+# Calculo de IMC
+imc_body(peso=78, altura_metros=1.75)
 
 # Maior valor
-valor_1 = input('primeiro valor: ')
-valor_2 = input('segunda valor:')
-bigger_value(valor_1=valor_1, valor_2=valor_2)
-
+bigger_value(valor_1=10, valor_2=16)
 
 # tratamentos de nomes
-nome = str(input('Nome:'))
-idade = int(input('Idade:'))
-name_age(nome=nome, idade=idade)
+name_age(nome='Matheus', idade=22)
+
+# Analisar se um valor inteiro é par ou impar
+number_par_inpar(100)
+
+# analisar o horário do dia através da HORA
+current_time(23)
+
+# Tamanho do nome
+size_first_name('maria')
+
+# usando While
+using_while('Programador')
+"""
+
+
