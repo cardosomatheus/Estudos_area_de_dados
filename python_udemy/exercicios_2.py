@@ -1,6 +1,6 @@
 from funcoes import *
 
-"""
+
 # Calculo de IMC
 imc_body(peso=78, altura_metros=1.75)
 
@@ -21,6 +21,9 @@ size_first_name('maria')
 
 # usando While
 using_while('Programador')
-"""
 
+# Controle de lista
+liss_values()
 
+# Gera um CPF valido 
+generator_cpf()

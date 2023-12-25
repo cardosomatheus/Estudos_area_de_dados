@@ -1,3 +1,7 @@
+import os
+import re
+import random
+
 
 def imc_body(peso, altura_metros):
     caluclo_imc = round(peso / (altura_metros * altura_metros), 2)
@@ -142,3 +146,80 @@ def basic_calculator(first_value, second_value, operador):
 
         except ZeroDivisionError:
             print('O segundo valor (dividento) não pode ser 0 na divisão')
+
+
+def liss_values():
+    lista_completa = []
+    while True:
+        acao_lista = str(input('selecione uma opção: , [I] inserir [L] Listar [A] Apagar  [S] Sair: ')).upper()
+        try:
+            if acao_lista == 'I':
+                valor = str(input('Informe o valor:'))
+                os.system('clear')
+                lista_completa.append(valor)
+
+            elif acao_lista == 'A':
+                index_escolhido = int(input('Escolha um index para a ação: '))
+                del (lista_completa[index_escolhido])
+
+            elif acao_lista == 'L':
+                os.system('clear')
+                if len(lista_completa) == 0:
+                    print('A lista está vazia até o momento.')
+
+                else:
+                    for index, item in enumerate(lista_completa):
+                        print(index, item)
+            elif acao_lista == 'S':
+                break
+
+            else:
+                print('opção incorreta.')
+        except IndexError:
+            print('Ação não realizada pois houve error com o index informado.')
+
+        except ValueError:
+            print('Index informado invalido, informe um numero inteiro.')
+
+
+def generator_cpf():
+    
+    cpf_gerado = [str(random.randint(0,9)) for i in range(0,9)]
+    cpf_gerado = "".join(cpf_gerado)
+    multiplicador_10 = 10
+    multiplicador_11 = 11
+    primeiro_digito_soma_valores = 0
+    segundo_digito_soma_valores  = 0
+    resto_divisao_primeiro_valor = 0
+    resto_divisao_segundo_valor  = 0
+    valida_cpf = len(cpf_gerado) < 9  or cpf_gerado == (cpf_gerado[0] * len(cpf_gerado)) 
+    cpf_gerado = re.sub(r'[^0-9]','', cpf_gerado)
+
+    if valida_cpf is False:
+        for i in cpf_gerado:
+            i = int(i)
+            primeiro_digito_valor = multiplicador_10 * i
+            segundo_digito_valor  = multiplicador_11 * i
+            primeiro_digito_soma_valores += primeiro_digito_valor
+            segundo_digito_soma_valores  += segundo_digito_valor
+
+            if multiplicador_10 == 2:
+                # O resto da divisao entra os 9 valores se torna o 10º valor do cpf
+                resto_divisao_primeiro_valor = (primeiro_digito_soma_valores * 10) % 11
+                i = resto_divisao_primeiro_valor
+
+            if multiplicador_11 == 2:
+                resto_divisao_segundo_valor  = (segundo_digito_soma_valores * 10) % 11
+                break 
+            multiplicador_10 -= 1
+            multiplicador_11 -= 1
+
+        primeiro_digito = 0 if resto_divisao_primeiro_valor > 9 else  resto_divisao_primeiro_valor
+        segundo_digito  = 0 if resto_divisao_segundo_valor > 9 else  resto_divisao_segundo_valor
+        valores_finais  = str(primeiro_digito) + str(segundo_digito)
+        cpf_final = cpf_gerado+'-'+valores_finais
+
+        print('CPF:', cpf_final) 
+
+    else:
+        print('CPF  Invalido')
