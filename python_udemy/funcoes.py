@@ -1,6 +1,7 @@
 import os
 import re
 import random
+import emoji
 
 
 def imc_body(peso, altura_metros):
@@ -33,23 +34,6 @@ def name_age(nome, idade):
         print('Ultima letra:', nome[-1])
     else:
         print('Campos Vazios')
-
-
-def number_par_inpar(pvalor):
-    try:
-        if isinstance(pvalor, int):
-            numero_par = 'Valor Impar'
-
-            if pvalor % 2 == 0:
-                numero_par = 'Valor Par'
-        else:
-            raise ValueError()
-
-        print('valor:', pvalor, 'É um valor', numero_par)
-
-    except ValueError:
-        print('O valor não é um numero inteiro!!')
-
 
 def current_time(current_time):
     try:
@@ -223,3 +207,4 @@ def generator_cpf():
 
     else:
         print('CPF  Invalido')
+

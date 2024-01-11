@@ -10,9 +10,6 @@ bigger_value(valor_1=10, valor_2=16)
 # tratamentos de nomes
 name_age(nome='Matheus', idade=22)
 
-# Analisar se um valor inteiro é par ou impar
-number_par_inpar(100)
-
 # analisar o horário do dia através da HORA
 current_time(23)
 
