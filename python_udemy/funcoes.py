@@ -1,8 +1,4 @@
-import os
-import re
-import random
-import emoji
-
+import dados.dados_exercicios as exe
 
 def imc_body(peso, altura_metros):
     caluclo_imc = round(peso / (altura_metros * altura_metros), 2)
@@ -139,7 +135,7 @@ def liss_values():
         try:
             if acao_lista == 'I':
                 valor = str(input('Informe o valor:'))
-                os.system('clear')
+                exe.os.system('clear')
                 lista_completa.append(valor)
 
             elif acao_lista == 'A':
@@ -147,7 +143,7 @@ def liss_values():
                 del (lista_completa[index_escolhido])
 
             elif acao_lista == 'L':
-                os.system('clear')
+                exe.os.system('clear')
                 if len(lista_completa) == 0:
                     print('A lista está vazia até o momento.')
 
@@ -168,7 +164,7 @@ def liss_values():
 
 def generator_cpf():
     
-    cpf_gerado = [str(random.randint(0,9)) for i in range(0,9)]
+    cpf_gerado = [str(exe.random.randint(0,9)) for i in range(0,9)]
     cpf_gerado = "".join(cpf_gerado)
     multiplicador_10 = 10
     multiplicador_11 = 11
@@ -177,7 +173,7 @@ def generator_cpf():
     resto_divisao_primeiro_valor = 0
     resto_divisao_segundo_valor  = 0
     valida_cpf = len(cpf_gerado) < 9  or cpf_gerado == (cpf_gerado[0] * len(cpf_gerado)) 
-    cpf_gerado = re.sub(r'[^0-9]','', cpf_gerado)
+    cpf_gerado = exe.re.sub(r'[^0-9]','', cpf_gerado)
 
     if valida_cpf is False:
         for i in cpf_gerado:
@@ -207,4 +203,16 @@ def generator_cpf():
 
     else:
         print('CPF  Invalido')
+
+
+def deep_list_ascending():
+    # Aumente os preços dos produtos a seguir em 10%
+    # gere uma deep copy da lista
+    # Gere produtos_ordenados_por_nome por deep copy (cópia profunda)
+    
+    produtos = exe.produtos_deep_copy
+    deep_produtos= [{**i, 'preco': round(i['preco'] * 1.1,2)}  
+                        for i in exe.copy.deepcopy(produtos)]
+    produtos_ordenados_por_nome = sorted(deep_produtos, key= lambda  k: k['nome'])
+    print('deep copy com preco + 10% ordenada:  ', *produtos_ordenados_por_nome, sep='\n')
 

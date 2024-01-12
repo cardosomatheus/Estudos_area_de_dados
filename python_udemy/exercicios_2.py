@@ -1,26 +1,28 @@
-from funcoes import *
+import funcoes as fnc 
 
 
-# Calculo de IMC
-imc_body(peso=78, altura_metros=1.75)
+#Calculo de IMC
+fnc.imc_body(peso=78, altura_metros=1.75)
 
 # Maior valor
-bigger_value(valor_1=10, valor_2=16)
+fnc.bigger_value(valor_1=10, valor_2=16)
 
 # tratamentos de nomes
-name_age(nome='Matheus', idade=22)
+fnc.name_age(nome='Matheus', idade=22)
 
 # analisar o horário do dia através da HORA
-current_time(23)
+fnc.current_time(23)
 
 # Tamanho do nome
-size_first_name('maria')
+fnc.size_first_name('maria')
 
 # usando While
-using_while('Programador')
+fnc.using_while('Programador')
 
 # Controle de lista
-liss_values()
+fnc.liss_values()
 
 # Gera um CPF valido 
-generator_cpf()
+fnc.generator_cpf()
+
+fnc.deep_list_ascending()
