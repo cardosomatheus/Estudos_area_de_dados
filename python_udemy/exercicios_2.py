@@ -26,3 +26,5 @@ fnc.liss_values()
 fnc.generator_cpf()
 
 fnc.deep_list_ascending()
+
+fnc.fatorial(5)

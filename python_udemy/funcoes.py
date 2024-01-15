@@ -216,3 +216,11 @@ def deep_list_ascending():
     produtos_ordenados_por_nome = sorted(deep_produtos, key= lambda  k: k['nome'])
     print('deep copy com preco + 10% ordenada:  ', *produtos_ordenados_por_nome, sep='\n')
 
+
+def fatorial(n):
+    if n <=1:
+        return 1
+    
+    value = n * fatorial(n-1)
+    print(value)
+    return value
