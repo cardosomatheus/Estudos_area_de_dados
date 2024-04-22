@@ -1,18 +1,25 @@
-﻿class Carro:
-    def  __init__(self, nome = 'tt'):
+﻿class Pessoa:
+    def __init__(self, nome, sobrenome):
         self.nome = nome
+        self.sobrenome = sobrenome
         
-        
-    def acelerar(self, velocidade):
-        return f' {self.nome} está em  {velocidade + 10} km/h'
+
+    def falar_nome_classe(self):
+        print(f'nome {self.nome} {self.sobrenome} classe: {self.__class__.__name__}')
+
+class Cliente(Pessoa):
+    ...
+    
 
 
+class Aluno(Pessoa):
+    ...
+    
+    
+    
+c1 = Cliente('luiz', '2')
+a1 = Aluno('joao', '3')
 
-pp = Carro('fusca')
-pq = Carro('camaro')
-
-print(pp.acelerar(10))
-
-print(pq.acelerar(100))
-
-
+c1.falar_nome_classe()
+print()
+a1.falar_nome_classe()
