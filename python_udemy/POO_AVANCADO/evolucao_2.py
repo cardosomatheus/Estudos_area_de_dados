@@ -16,7 +16,7 @@ class Humano:
         return ('australopithecus',)+ tuple(f'Homo {adj}' for adj in adjetivos)
 
 
-    @staticmethod
+    @classmethod
     def is_evoluido(cls):
         return cls.especie == cls.especies()[-1] 
 
