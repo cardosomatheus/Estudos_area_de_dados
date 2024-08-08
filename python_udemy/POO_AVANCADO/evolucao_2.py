@@ -6,7 +6,7 @@ class Humano:
 
 
     def das_cavernas(self):
-        self.especie = 'homo neanderthalensis'
+        self.especie = 'Homo Neanderthalensis'
         return self
 
 
@@ -35,9 +35,12 @@ if __name__=='__main__':
     badu = Humano('badu').das_cavernas()
     jose = Humano('jose')
 
+    print(Humano.is_evoluido())
+    print(HomoSapiens.is_evoluido())
+    print(Neanderthalensis.is_evoluido())
     print(badu.especie)
     print(jose.especie)
-    print(Humano.especies())
-    print(Humano.is_evoluido(jose))
-    print(Humano.is_evoluido(HomoSapiens))
-    print(Humano.is_evoluido(Neanderthalensis))
+    print(jose.especies())
+    print(HomoSapiens.is_evoluido())
+    print(jose.is_evoluido())
+    print(badu.is_evoluido())

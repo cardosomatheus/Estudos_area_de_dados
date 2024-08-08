@@ -13,10 +13,12 @@ class Humano:
     def get_idade(self):
         return self._idade
 
+
     def set_idade(self,idade):
         if idade <0:
             raise ValueError('Idade menor que zero!!')
         self._idade = idade
+
 
     @staticmethod
     def especies():
@@ -24,7 +26,7 @@ class Humano:
         return ('australopithecus',)+ tuple(f'Homo {adj}' for adj in adjetivos)
 
 
-    @staticmethod
+    @classmethod
     def is_evoluido(cls):
         return cls.especie == cls.especies()[-1] 
 
@@ -46,6 +48,6 @@ if __name__=='__main__':
     print(badu.especie)
     print(jose.especie)
     print(Humano.especies())
-    print(Humano.is_evoluido(jose))
-    print(Humano.is_evoluido(HomoSapiens))
-    print(Humano.is_evoluido(Neanderthalensis))
+    print(Humano.is_evoluido())
+    print(jose.is_evoluido())
+    print(badu.is_evoluido())
