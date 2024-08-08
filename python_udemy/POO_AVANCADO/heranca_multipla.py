@@ -7,7 +7,7 @@ class Animal:
         return ('andar','comer','beber')
     
 
-class Homen(Animal):
+class Homem(Animal):
 
     @property
     def capacidades(self):
@@ -21,7 +21,7 @@ class Aranha(Animal):
     def capacidades(self):
         return super().capacidades+('soltar teia','andar pela parede')
 
-class HomenAranha(Homen,Aranha):
+class HomemAranha(Homem,Aranha):
 
     @property
     def capacidades(self):
@@ -30,9 +30,9 @@ class HomenAranha(Homen,Aranha):
 
 
 rato = Animal()
-jorge = Homen()
+jorge = Homem()
 dona_aranha = Aranha()
-petter = HomenAranha()
+petter = HomemAranha()
 
 print('animal: ',rato.capacidades)
 print('Homen: ',jorge.capacidades)
