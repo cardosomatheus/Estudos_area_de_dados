@@ -20,5 +20,5 @@ class Pessoa:
 
 
 pessoa = Pessoa('Chaves', 80)  
-print(pessoa.get_ano_nascimento())
+print(pessoa.get_ano_nascimento)
 pessoa.metodo_de_classe()
