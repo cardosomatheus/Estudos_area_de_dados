@@ -1,4 +1,6 @@
 
+
+
 def mapear_1(funcao, lista):
     for valor in lista:
         yield funcao(valor)
