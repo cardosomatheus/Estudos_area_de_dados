@@ -8,14 +8,13 @@ Formato de entrada
 
 A tabela TRIANGLES.
 
-SELECT 
-    CASE 
-      WHEN (A +B > C) AND (C+A>B) AND (B+C>A) THEN
-        CASE 
-          WHEN (A <> B AND  B <> C  AND C <> A) AND (A +B > C)  THEN 'Scalene'
-          WHEN (A = B AND A = C) THEN 'Equilateral'
-          WHEN (A = B AND A <> C) OR (A = C AND A <> B) OR (B = C AND B <> A) THEN  'Isosceles'
-        END                                  
-      ELSE 'Not A Triangle'
-     END
-FROM TRIANGLES A;
+SELECT CASE 
+         WHEN (A +B > C) AND (C+A>B) AND (B+C>A) THEN
+           CASE 
+             WHEN (A <> B AND  B <> C  AND C <> A) AND (A +B > C)  THEN 'Scalene'
+             WHEN (A = B AND A = C) THEN 'Equilateral'
+             WHEN (A = B AND A <> C) OR (A = C AND A <> B) OR (B = C AND B <> A) THEN  'Isosceles'
+           END                                  
+         ELSE 'Not A Triangle'
+       END
+    FROM TRIANGLES A;
