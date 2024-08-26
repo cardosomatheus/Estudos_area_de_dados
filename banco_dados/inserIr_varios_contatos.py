@@ -22,4 +22,3 @@ with nova_conexao() as conexao:
         print(e)
         
         
-        
